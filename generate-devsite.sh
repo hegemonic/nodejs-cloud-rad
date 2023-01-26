@@ -41,8 +41,10 @@ echo "node $(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
 node "$(npm root)/@google-cloud/cloud-rad/prettyPrint.js"
 
 # remove common and auth from toc
-echo "node $(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
-node "$(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
+# echo "node $(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
+# node "$(npm root)/@google-cloud/cloud-rad/deleteBaseClasses.js"
+echo "node $(npm root)/@google-cloud/cloud-rad/generate-devsite-stub.mjs"
+node "$(npm root)/@google-cloud/cloud-rad/generate-devsite-stub.mjs"
 
 # remove interfaces from toc
 echo "node $(npm root)/@google-cloud/cloud-rad/removeInterface.js"
